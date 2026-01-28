@@ -2,11 +2,11 @@
 
 ## Table of Contents
 - [Project Overview](#project-overview)
+- [Key objectives](#key-objectives)
 - [Dataset](#dataset)
 - [Models Evaluated](#models-evaluated)
 - [Installation & Setup](#installation--setup)
 - [Usage](#usage)
-- [Results](#results)
 - [Key findings](#Key-Findings)
 - [Conclusion](#Conclusion)
 ---
@@ -31,23 +31,26 @@ This project focuses on analyzing medical insurance data to understand the facto
 
 ## Dataset
 
-
+**Source:** Insurance Dataset (insurance.csv)
+**Domain:** Healthcare
+**Records:** Policyholder-level data
 
 ---
 
 ## Models Evaluated
-- **Convolutional Neural Network (CNN)**: A custom architecture designed specifically for this dataset.
-- **VGG-16**: A deep pre-trained network fine-tuned for tumor detection.
-- **InceptionV3**: Pre-trained InceptionV3 model adapted to this classification task.
-- **MobileNet**: Lightweight pre-trained MobileNet model fine-tuned for high accuracy and speed.
-
+## The following models were evaluated to predict medical insurance costs:
+- Linear Regression
+- Multiple Linear Regression
+-Regularized Regression Models
+- Performance comparison based on regression metrics such as: R² Score, Mean Absolute Error (MAE), Mean Squared Error (MSE)
+  
 ---
 
 ## Installation & Setup
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Shabeha31/Brain_tumor_detection.git
-   cd Brain_tumor_detection
+   git clone https://github.com/Shabeha31/medical-insurance-cost-analysis-python.git
+   cd medical-insurance-cost-analysis-python
 2. Install dependencies:
    pip install -r requirements.txt
 3. Ensure you have Jupyter Notebook or a Python IDE installed.
@@ -58,34 +61,22 @@ This project focuses on analyzing medical insurance data to understand the facto
 1. Open the Jupyter Notebook:
    jupyter notebook Brain_Tumor_Detection.ipynb
 2. Follow the notebook cells to:
-   . Load and preprocess the dataset
-   . Train and evaluate models
-   . Visualize results
-3. Optionally, adjust hyperparameters (epochs, batch size, learning rate) to experiment.
+   . Load the dataset and perform exploratory data analysis (EDA)
+   . Visualize relationships between features and insurance charges
+   . Train regression models to predict insurance costs
+   . Compare model performance and interpret results
 
 ---
 
-## Results
-
-| Model            | Training Accuracy | Validation Accuracy | Test Accuracy | Training Time |
-|-----------------|-----------------|-------------------|---------------|---------------|
-| CNN (Real)      | 58%             | 73%               | 63%           | 3:56          |
-| CNN (Augmented) | 100%            | 89%               | 93%           | 29:50         |
-| VGG-16          | 98%             | 94%               | 95%           | 1:59:58       |
-| InceptionV3     | 100%            | 97%               | 98%           | 26:42         |
-| MobileNet       | 100%            | 99%               | 99%           | 9:46          |
-
-**Best Model:** MobileNet achieved the highest test accuracy (**99%**) and was the most time-efficient, completing training in just under 10 minutes.  
-This model’s efficiency and accuracy make it ideal for real-time clinical use.
-
 ## Key Findings
-- **Data Augmentation:** Significantly improved model performance by expanding the dataset and reducing overfitting.  
-- **Model Comparison:** MobileNet outperformed other models, combining high accuracy with low computational demands, making it well-suited for clinical applications.  
-- **Transfer Learning Advantage:** Pre-trained models provided higher accuracy and generalization compared to the custom CNN model, especially on the augmented dataset.  
+- Age shows a strong positive correlation with insurance charges
+- Insurance charges increase sharply with age for smokers compared to non-smokers
+- Regional differences exist but have less impact than lifestyle factors
+- BMI and number of children have limited standalone influence on premium cost
+- Combining demographic and lifestyle features improves prediction accuracy
 
 ---
 
 ## Conclusion
-This study demonstrates the effectiveness of transfer learning models, particularly MobileNet, in accurately detecting brain tumors from MRI images.  
-By leveraging **data augmentation** and **pre-trained models**, this project offers a reliable, fast, and accurate approach that could support radiologists in diagnosing brain tumors.
+This project highlights how lifestyle choices, particularly smoking, significantly affect medical insurance costs. Through EDA and predictive modeling, the analysis demonstrates that insurers can better estimate premiums by incorporating behavioral and demographic factors. The findings emphasize the importance of risk-based pricing and provide actionable insights for healthcare insurance providers to improve policy design and cost forecasting.
 
