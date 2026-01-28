@@ -52,8 +52,7 @@ This project focuses on analyzing medical insurance data to understand the facto
    ```bash
    git clone https://github.com/Shabeha31/medical-insurance-cost-analysis-python.git
    cd medical-insurance-cost-analysis-python
-2. Install dependencies:
-   pip install -r requirements.txt
+2. Install dependencies
 3. Ensure you have Jupyter Notebook or a Python IDE installed.
 
 ---
