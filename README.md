@@ -61,10 +61,10 @@ This project focuses on analyzing medical insurance data to understand the facto
 1. Open the Jupyter Notebook:
    jupyter notebook Brain_Tumor_Detection.ipynb
 2. Follow the notebook cells to:
-   . Load the dataset and perform exploratory data analysis (EDA)
-   . Visualize relationships between features and insurance charges
-   . Train regression models to predict insurance costs
-   . Compare model performance and interpret results
+   - Load the dataset and perform exploratory data analysis (EDA)
+   - Visualize relationships between features and insurance charges
+   - Train regression models to predict insurance costs
+   - Compare model performance and interpret results
 
 ---
 
