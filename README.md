@@ -1,1 +1,91 @@
-Insurance Data Analysis
+# Insurance Data Analysis
+
+## Table of Contents
+- [Project Overview](#project-overview)
+- [Dataset](#dataset)
+- [Models Evaluated](#models-evaluated)
+- [Installation & Setup](#installation--setup)
+- [Usage](#usage)
+- [Results](#results)
+- [Key findings](#Key-Findings)
+- [Conclusion](#Conclusion)
+---
+
+## Project Overview
+This project focuses on analyzing medical insurance data to understand the factors that influence healthcare premium costs. Using exploratory data analysis (EDA) and predictive modeling, the goal is to uncover patterns related to age, BMI, smoking habits, region, and other demographic factors, and to build models that can predict insurance charges. The insights derived from this analysis can help insurance companies make informed business decisions and optimize premium pricing strategies.
+
+---
+
+## Key objectives:
+- Perform exploratory data analysis (EDA) on medical insurance data to uncover meaningful patterns.
+- Understand how demographic and lifestyle factors affect insurance premium charges
+- Analyze the impact of smoking status on healthcare costs across different age groups
+- Examine relationships between age, BMI, number of children, region, and insurance charges
+- Identify the most influential features contributing to higher medical insurance premiums
+- Build and evaluate predictive models to estimate insurance costs
+- Support data-driven decision-making for insurance pricing and risk assessment
+- Compare performance of CNN and transfer learning models.
+- Use data augmentation to improve model accuracy and generalization.
+
+---
+
+## Dataset
+
+
+
+---
+
+## Models Evaluated
+- **Convolutional Neural Network (CNN)**: A custom architecture designed specifically for this dataset.
+- **VGG-16**: A deep pre-trained network fine-tuned for tumor detection.
+- **InceptionV3**: Pre-trained InceptionV3 model adapted to this classification task.
+- **MobileNet**: Lightweight pre-trained MobileNet model fine-tuned for high accuracy and speed.
+
+---
+
+## Installation & Setup
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shabeha31/Brain_tumor_detection.git
+   cd Brain_tumor_detection
+2. Install dependencies:
+   pip install -r requirements.txt
+3. Ensure you have Jupyter Notebook or a Python IDE installed.
+
+---
+
+## Usage
+1. Open the Jupyter Notebook:
+   jupyter notebook Brain_Tumor_Detection.ipynb
+2. Follow the notebook cells to:
+   . Load and preprocess the dataset
+   . Train and evaluate models
+   . Visualize results
+3. Optionally, adjust hyperparameters (epochs, batch size, learning rate) to experiment.
+
+---
+
+## Results
+
+| Model            | Training Accuracy | Validation Accuracy | Test Accuracy | Training Time |
+|-----------------|-----------------|-------------------|---------------|---------------|
+| CNN (Real)      | 58%             | 73%               | 63%           | 3:56          |
+| CNN (Augmented) | 100%            | 89%               | 93%           | 29:50         |
+| VGG-16          | 98%             | 94%               | 95%           | 1:59:58       |
+| InceptionV3     | 100%            | 97%               | 98%           | 26:42         |
+| MobileNet       | 100%            | 99%               | 99%           | 9:46          |
+
+**Best Model:** MobileNet achieved the highest test accuracy (**99%**) and was the most time-efficient, completing training in just under 10 minutes.  
+This model’s efficiency and accuracy make it ideal for real-time clinical use.
+
+## Key Findings
+- **Data Augmentation:** Significantly improved model performance by expanding the dataset and reducing overfitting.  
+- **Model Comparison:** MobileNet outperformed other models, combining high accuracy with low computational demands, making it well-suited for clinical applications.  
+- **Transfer Learning Advantage:** Pre-trained models provided higher accuracy and generalization compared to the custom CNN model, especially on the augmented dataset.  
+
+---
+
+## Conclusion
+This study demonstrates the effectiveness of transfer learning models, particularly MobileNet, in accurately detecting brain tumors from MRI images.  
+By leveraging **data augmentation** and **pre-trained models**, this project offers a reliable, fast, and accurate approach that could support radiologists in diagnosing brain tumors.
+
