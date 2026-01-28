@@ -9,6 +9,7 @@
 - [Usage](#usage)
 - [Key findings](#Key-Findings)
 - [Conclusion](#Conclusion)
+- [Author & Contact](#Author-&-Contact)
 ---
 
 ## Project Overview
@@ -80,7 +81,7 @@ This project focuses on analyzing medical insurance data to understand the facto
 ## Conclusion
 This project highlights how lifestyle choices, particularly smoking, significantly affect medical insurance costs. Through EDA and predictive modeling, the analysis demonstrates that insurers can better estimate premiums by incorporating behavioral and demographic factors. The findings emphasize the importance of risk-based pricing and provide actionable insights for healthcare insurance providers to improve policy design and cost forecasting.
 
-## Author
+## Author & Contact
 **Shabeha khan**  
 Data Analyst  
 📧 Email: shabehakhan4@gmail.com  
