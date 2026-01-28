@@ -9,7 +9,7 @@
 - [Usage](#usage)
 - [Key findings](#Key-Findings)
 - [Conclusion](#Conclusion)
-- [Author & Contact](#Author-&-Contact)
+- [Author & Contact](#Author--Contact)
 ---
 
 ## Project Overview
